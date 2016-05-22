@@ -13,6 +13,8 @@ namespace CompleteProject
         public Image damageImage;                                   // Reference to an image to flash on the screen on being hurt.
         public AudioClip deathClip;                                 // The audio clip to play when the player dies.
         public float flashSpeed = 5f;                               // The speed the damageImage will fade at.
+		public AudioClip hurtClip1;
+		public AudioClip hurtClip2;
         public Color flashColour = new Color(1f, 0f, 0f, 0.1f);     // The colour the damageImage is set to, to flash.
 
 
@@ -68,6 +70,11 @@ namespace CompleteProject
             // Set the health bar's value to the current health.
             healthSlider.value = currentHealth;
 
+			if (Random.value > 0.5) {
+				playerAudio.clip = hurtClip1;
+			} else {
+				playerAudio.clip = hurtClip2;
+			}
             // Play the hurt sound effect.
             playerAudio.Play ();
 
