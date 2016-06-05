@@ -41,7 +41,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 6
-  m_GIWorkflowMode: 1
+  m_GIWorkflowMode: 0
   m_LightmapsMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -2868,7 +2868,7 @@ Prefab:
       objectReference: {fileID: 1394906873}
     - target: {fileID: 10800002, guid: 4e5a0d387dc27394b81600988ad0216f, type: 2}
       propertyPath: m_BounceIntensity
-      value: .5
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8200002, guid: 4e5a0d387dc27394b81600988ad0216f, type: 2}
       propertyPath: panLevelCustomCurve.m_RotationOrder
@@ -2902,6 +2902,34 @@ Prefab:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 649aaadacd63d4544860ea4972bb1529, type: 3}
+    - target: {fileID: 12000000, guid: 4e5a0d387dc27394b81600988ad0216f, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 12000000, guid: 4e5a0d387dc27394b81600988ad0216f, type: 2}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 12000000, guid: 4e5a0d387dc27394b81600988ad0216f, type: 2}
+      propertyPath: m_UseLightProbes
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 10800000, guid: 4e5a0d387dc27394b81600988ad0216f, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 10800002, guid: 4e5a0d387dc27394b81600988ad0216f, type: 2}
+      propertyPath: m_Color.r
+      value: 0.8862745
+      objectReference: {fileID: 0}
+    - target: {fileID: 10800002, guid: 4e5a0d387dc27394b81600988ad0216f, type: 2}
+      propertyPath: m_Color.g
+      value: 0.11372549
+      objectReference: {fileID: 0}
+    - target: {fileID: 10800002, guid: 4e5a0d387dc27394b81600988ad0216f, type: 2}
+      propertyPath: m_Color.b
+      value: 0.96862745
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e5a0d387dc27394b81600988ad0216f, type: 2}
   m_IsPrefabParent: 0
